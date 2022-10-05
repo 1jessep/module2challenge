@@ -1,0 +1,316 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*sets font for entire page*/
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+
+/*sets different sizing, text alignment, and color for specific bodies of text*/
+h1 {
+    color: grey;
+    font-size: 60px;
+    font-weight: normal;
+}
+
+h2 {
+    text-align: center;
+    color: grey;
+    font-size: 50px;
+}
+
+h3 {
+    text-align: center;
+    color: whitesmoke;
+    font-size: 40px;
+    font-style: oblique;
+}
+
+h4 {
+    text-align: left;
+    color: grey;
+    font-size: 26px;
+}
+
+h5 {
+    font-size: 15px;
+    color: grey;
+}
+
+/*sets color and font size for links*/
+li a {
+    color:rgb(93, 157, 141);
+    font-size: 25px;
+}
+
+/*prevents link from being underlined*/
+a {
+    text-decoration: none;
+}
+
+/*sets background of webpage*/
+.website-background {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-color: black;
+
+}
+
+/*sets the demensions for the header section and allows for space between items in header*/
+header {
+    height: 200px;
+    padding: 32px 64px 64px 64px;
+    margin: 3px;
+    border: none;
+    display: flex;
+    justify-content:space-evenly;
+}
+
+/*puts the image of my face in the center of header and sets height of image*/
+img {
+    align-items: center;
+    height: 150px;
+}
+
+/*sets font, font-size, and allows for the image of my face to pass under name when manually minimizing page*/
+.Name {
+    font-family:Impact, 'Haettenschweiler', 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+    margin-top: 0;
+    width: 20%;
+    z-index: 100;
+}
+
+
+.nav {
+    color: black;
+    float: right;
+}
+
+header div nav {
+    bottom: 10px;
+    right: 10px;
+    font-size: 36px;
+}
+
+/*sets the cursor to crosshair when hovering over link in .nav bar*/
+/*when links are clicked the page navigates to desired section*/
+nav ul li a {
+   margin: 10px;
+   cursor: crosshair;
+}
+
+/*sets font for list in nav bar and positioning*/
+ul li {
+    width: 75%;
+    display:inline;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*sets deminsions for main content sections*/
+main {
+    padding: 64px;
+    margin: 3px;
+    border: none;
+}
+
+.bio {
+    padding-top: 2px;
+    padding-bottom: 15px;
+    border: none;
+    margin-bottom: 40px;
+    background-color: black;
+}
+
+p {
+    color: grey;
+    text-align: center;
+    font-size: 25px;
+}
+
+.projects {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+
+/*sets positioning of project boxes*/
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 175px;
+}
+
+
+/*allows for project 1 to be larger than the rest. Also adding a border radius to each project box for 
+curved edges. Images are attached to each project box as well as a link that can be accessed after clicking
+the project box*/
+/*When project box is clicked you are redirected to attached website url*/
+.project1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    border: none;
+    border-radius: 50px;
+    margin: 2px;
+    background-image: url(Images/horiseon.png);
+    background-size: cover;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+.project2 {
+    border: none;
+    border-radius: 50px;
+    margin: 2px;
+    background-image: url(Images/western.png);
+    background-size: cover;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+   
+}
+
+.project3 {
+    border: none;
+    border-radius: 50px;
+    margin: 2px;
+    background-image: url(Images/guitar.jpg);
+    background-size: cover;
+    font-size: 24px;
+    color: white;
+    text-align: right;
+}
+
+.project4 {
+    border: none;
+    border-radius: 50px;
+    margin: 2px;
+    background-image: url(Images/videogames.jpg);
+    background-size: cover;
+    font-size: 24px;
+    color: white;
+    text-align: left;
+}
+
+.project5 {
+    border: none;
+    border-radius: 50px;
+    margin: 2px;
+    background-image: url(Images/haunted.jpg);
+    background-size: cover;
+    font-size: 24px;
+    color: white;
+    text-align: right;
+  }
+
+
+/*when hovering over project boxes the cursor turns into a crosshair. Also when hovering over
+a project box the selected box gets bigger in size*/
+.project1:hover,
+.project2:hover,
+.project3:hover,
+.project4:hover,
+.project5:hover {
+    cursor:crosshair;
+    transform: scale(1.05);
+}
+
+
+/*sets demensions, display settings, and alignment for contact section*/
+.contact-section {
+    margin-top: 10px;
+    padding: 10px;
+    padding-bottom: 55px;
+    border: none;
+    background-color: black;
+}
+
+section div ul li {
+    margin: 5px;
+    text-align: center;
+    display: inline;
+}
+
+/*transforms cursor into crosshair*/
+/*user is redirected to attached url webpage upon clicking link*/
+section div ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(93, 157, 141);
+    cursor: crosshair;
+}
+
+
+/*sets dimensions for footer*/
+footer {
+    border: none;
+    margin: 3px;
+    font-size: 15px;
+    text-align: center;
+}
+
+
+/*alters aopearance of webpage when the user minimizes page below 1024px*/
+/*When webpage shrinks below 1024px the text gets smaller as well as image of my face.
+Header and Contact Section is set to flex column so when the webpage gets small the items 
+drop below each over*/
+@media screen and (max-width: 1024px) {
+    
+
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 11px;
+        font-weight: bolder;
+    }
+
+    p {
+        font-size: 18px;
+
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+    }
+
+    header div nav ul li a {
+        font-size: 18px;
+    }
+
+    img {
+        height: 125px;
+    }
+
+    .contact-section {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    section div ul li a {
+        font-size: 18px;
+    }
+
+    
+}
+
+
